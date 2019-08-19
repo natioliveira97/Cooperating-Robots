@@ -1,0 +1,3 @@
+/home/nao/Documents/installation/installation_test/CMakeFiles/edit_cache.dir
+/home/nao/Documents/installation/installation_test/CMakeFiles/rebuild_cache.dir
+/home/nao/Documents/installation/installation_test/CMakeFiles/Kinect_Test.dir
