@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nao/Documents/installation/installation_test
+CMAKE_SOURCE_DIR = /home/nao/Cooperating-Robots/installation/installation_test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nao/Documents/installation/installation_test
+CMAKE_BINARY_DIR = /home/nao/Cooperating-Robots/installation/installation_test
 
 #=============================================================================
 # Target rules for target CMakeFiles/Kinect_Test.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/nao/Documents/installation/installation_test
 CMakeFiles/Kinect_Test.dir/all:
 	$(MAKE) -f CMakeFiles/Kinect_Test.dir/build.make CMakeFiles/Kinect_Test.dir/depend
 	$(MAKE) -f CMakeFiles/Kinect_Test.dir/build.make CMakeFiles/Kinect_Test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nao/Documents/installation/installation_test/CMakeFiles --progress-num=1,2 "Built target Kinect_Test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nao/Cooperating-Robots/installation/installation_test/CMakeFiles --progress-num=1,2 "Built target Kinect_Test"
 .PHONY : CMakeFiles/Kinect_Test.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/Kinect_Test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Kinect_Test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/Documents/installation/installation_test/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/Cooperating-Robots/installation/installation_test/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Kinect_Test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/Documents/installation/installation_test/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/Cooperating-Robots/installation/installation_test/CMakeFiles 0
 .PHONY : CMakeFiles/Kinect_Test.dir/rule
 
 # Convenience name for target.

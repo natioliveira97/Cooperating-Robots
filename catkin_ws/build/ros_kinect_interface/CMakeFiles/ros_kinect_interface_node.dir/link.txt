@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/ros_kinect_interface_node.dir/src/subscriber.cpp.o  -o /home/nao/catkin_ws/devel/lib/ros_kinect_interface/ros_kinect_interface_node -rdynamic 

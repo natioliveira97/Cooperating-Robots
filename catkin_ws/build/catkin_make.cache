@@ -1,0 +1,2 @@
+ros_kinect_interface
+-DCATKIN_DEVEL_PREFIX=/home/nao/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/nao/catkin_ws/install -G Unix Makefiles

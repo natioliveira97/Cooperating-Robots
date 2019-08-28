@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/nao/Documents/installation/installation_test/Kinect_Test.cpp" "/home/nao/Documents/installation/installation_test/CMakeFiles/Kinect_Test.dir/Kinect_Test.cpp.o"
+  "/home/nao/Cooperating-Robots/installation/installation_test/Kinect_Test.cpp" "/home/nao/Cooperating-Robots/installation/installation_test/CMakeFiles/Kinect_Test.dir/Kinect_Test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
