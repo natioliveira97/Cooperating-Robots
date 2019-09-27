@@ -80,7 +80,7 @@ Ignore AudioGenerator nodes.
 </pre> <div class="fragment"><div class="line"><span class="keywordflow">while</span> ((nRetVal = depth.WaitAnyUpdateAll ()) != XN_STATUS_EOF)</div><div class="line">{</div><div class="line">    ...</div><div class="line">}</div></div><!-- fragment --><p>Inside the body of the main program loop <code>nFrame</code> is incremented. An 'if' statement tests whether the user has specified a single node type and if so, and if the requested number of frames has been played back, then the execution of the main program loop is terminated. </p><div class="fragment"><div class="line">printf(<span class="stringliteral">&quot;Recording: %u\r&quot;</span>, nFrame++);</div><div class="line"><span class="keywordflow">if</span> ((seekNodeType != <a class="code" href="_xn_types_8h.html#ac773bbb9817dac5ae1be0f380ec18b52aecbdd244701d5cf6f3333faae8d235dd">XN_NODE_TYPE_INVALID</a>) &amp;&amp; (nFrame == nEndFrame))</div><div class="line">{</div><div class="line">    <span class="keywordflow">break</span>;          </div><div class="line">}</div></div><!-- fragment --> </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 19 2019 10:33:36 for OpenNI 1.5.7 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 27 2019 16:13:56 for OpenNI 1.5.7 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

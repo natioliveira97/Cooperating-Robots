@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/nao/Cooperating-Robots/installation/installation_test/Kinect_Test.cpp
+/home/cam/Cooperating-Robots/installation/installation_test/Kinect_Test.cpp
 stdio.h
 -
 opencv2/opencv.hpp

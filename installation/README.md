@@ -5,7 +5,15 @@ This repository contains the libraries and drivers used to connect, capture, pro
 To install all the packages, run:
 
 ```
-./install_all.sh
+./install_openni.sh
+```
+
+```
+./install_opencv.sh
+```
+
+```
+./install_ros_kinetic.sh
 ```
 
 To verify if the installation was successfull, run:
