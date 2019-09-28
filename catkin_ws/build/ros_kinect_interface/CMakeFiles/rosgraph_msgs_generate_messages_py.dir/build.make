@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nao/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/cam/Cooperating-Robots/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nao/catkin_ws/build
+CMAKE_BINARY_DIR = /home/cam/Cooperating-Robots/catkin_ws/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ ros_kinect_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build: ro
 .PHONY : ros_kinect_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 
 ros_kinect_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	cd /home/nao/catkin_ws/build/ros_kinect_interface && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/cam/Cooperating-Robots/catkin_ws/build/ros_kinect_interface && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : ros_kinect_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 ros_kinect_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend:
-	cd /home/nao/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nao/catkin_ws/src /home/nao/catkin_ws/src/ros_kinect_interface /home/nao/catkin_ws/build /home/nao/catkin_ws/build/ros_kinect_interface /home/nao/catkin_ws/build/ros_kinect_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cam/Cooperating-Robots/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cam/Cooperating-Robots/catkin_ws/src /home/cam/Cooperating-Robots/catkin_ws/src/ros_kinect_interface /home/cam/Cooperating-Robots/catkin_ws/build /home/cam/Cooperating-Robots/catkin_ws/build/ros_kinect_interface /home/cam/Cooperating-Robots/catkin_ws/build/ros_kinect_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ros_kinect_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
 

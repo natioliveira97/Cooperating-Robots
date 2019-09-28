@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/nao/catkin_ws/src/ros_kinect_interface/src/subscriber.cpp
+/home/cam/Cooperating-Robots/catkin_ws/src/ros_kinect_interface/src/subscriber.cpp
 ros/ros.h
 -
 image_transport/image_transport.h

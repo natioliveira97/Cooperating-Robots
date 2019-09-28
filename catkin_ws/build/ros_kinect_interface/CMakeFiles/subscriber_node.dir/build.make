@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nao/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/cam/Cooperating-Robots/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nao/catkin_ws/build
+CMAKE_BINARY_DIR = /home/cam/Cooperating-Robots/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include ros_kinect_interface/CMakeFiles/subscriber_node.dir/depend.make
@@ -58,17 +58,17 @@ include ros_kinect_interface/CMakeFiles/subscriber_node.dir/progress.make
 include ros_kinect_interface/CMakeFiles/subscriber_node.dir/flags.make
 
 ros_kinect_interface/CMakeFiles/subscriber_node.dir/src/subscriber.cpp.o: ros_kinect_interface/CMakeFiles/subscriber_node.dir/flags.make
-ros_kinect_interface/CMakeFiles/subscriber_node.dir/src/subscriber.cpp.o: /home/nao/catkin_ws/src/ros_kinect_interface/src/subscriber.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nao/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ros_kinect_interface/CMakeFiles/subscriber_node.dir/src/subscriber.cpp.o"
-	cd /home/nao/catkin_ws/build/ros_kinect_interface && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/subscriber_node.dir/src/subscriber.cpp.o -c /home/nao/catkin_ws/src/ros_kinect_interface/src/subscriber.cpp
+ros_kinect_interface/CMakeFiles/subscriber_node.dir/src/subscriber.cpp.o: /home/cam/Cooperating-Robots/catkin_ws/src/ros_kinect_interface/src/subscriber.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cam/Cooperating-Robots/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ros_kinect_interface/CMakeFiles/subscriber_node.dir/src/subscriber.cpp.o"
+	cd /home/cam/Cooperating-Robots/catkin_ws/build/ros_kinect_interface && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/subscriber_node.dir/src/subscriber.cpp.o -c /home/cam/Cooperating-Robots/catkin_ws/src/ros_kinect_interface/src/subscriber.cpp
 
 ros_kinect_interface/CMakeFiles/subscriber_node.dir/src/subscriber.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/subscriber_node.dir/src/subscriber.cpp.i"
-	cd /home/nao/catkin_ws/build/ros_kinect_interface && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nao/catkin_ws/src/ros_kinect_interface/src/subscriber.cpp > CMakeFiles/subscriber_node.dir/src/subscriber.cpp.i
+	cd /home/cam/Cooperating-Robots/catkin_ws/build/ros_kinect_interface && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cam/Cooperating-Robots/catkin_ws/src/ros_kinect_interface/src/subscriber.cpp > CMakeFiles/subscriber_node.dir/src/subscriber.cpp.i
 
 ros_kinect_interface/CMakeFiles/subscriber_node.dir/src/subscriber.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/subscriber_node.dir/src/subscriber.cpp.s"
-	cd /home/nao/catkin_ws/build/ros_kinect_interface && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nao/catkin_ws/src/ros_kinect_interface/src/subscriber.cpp -o CMakeFiles/subscriber_node.dir/src/subscriber.cpp.s
+	cd /home/cam/Cooperating-Robots/catkin_ws/build/ros_kinect_interface && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cam/Cooperating-Robots/catkin_ws/src/ros_kinect_interface/src/subscriber.cpp -o CMakeFiles/subscriber_node.dir/src/subscriber.cpp.s
 
 ros_kinect_interface/CMakeFiles/subscriber_node.dir/src/subscriber.cpp.o.requires:
 
@@ -88,93 +88,93 @@ subscriber_node_OBJECTS = \
 # External object files for target subscriber_node
 subscriber_node_EXTERNAL_OBJECTS =
 
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: ros_kinect_interface/CMakeFiles/subscriber_node.dir/src/subscriber.cpp.o
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: ros_kinect_interface/CMakeFiles/subscriber_node.dir/build.make
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_stitching3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_superres3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_videostab3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_aruco3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_bgsegm3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_bioinspired3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ccalib3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_cvv3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_dpm3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_face3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_fuzzy3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_hdf3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_img_hash3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_line_descriptor3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_optflow3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_reg3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_rgbd3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_saliency3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_stereo3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_structured_light3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_surface_matching3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_tracking3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xfeatures2d3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ximgproc3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xobjdetect3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xphoto3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/libcv_bridge.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/libimage_transport.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/libmessage_filters.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/libclass_loader.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/libPocoFoundation.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/libroscpp.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/librosconsole.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/libroslib.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/librospack.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/librostime.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/libcpp_common.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_shape3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_photo3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_datasets3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_plot3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_text3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_dnn3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ml3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_video3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_calib3d3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_features2d3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_highgui3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_videoio3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_viz3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_phase_unwrapping3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_flann3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_objdetect3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
-/home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: ros_kinect_interface/CMakeFiles/subscriber_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nao/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node"
-	cd /home/nao/catkin_ws/build/ros_kinect_interface && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/subscriber_node.dir/link.txt --verbose=$(VERBOSE)
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: ros_kinect_interface/CMakeFiles/subscriber_node.dir/src/subscriber.cpp.o
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: ros_kinect_interface/CMakeFiles/subscriber_node.dir/build.make
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_stitching3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_superres3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_videostab3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_aruco3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_bgsegm3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_bioinspired3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ccalib3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_cvv3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_dpm3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_face3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_fuzzy3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_hdf3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_img_hash3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_line_descriptor3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_optflow3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_reg3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_rgbd3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_saliency3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_stereo3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_structured_light3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_surface_matching3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_tracking3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xfeatures2d3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ximgproc3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xobjdetect3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xphoto3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/libcv_bridge.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/libimage_transport.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/libmessage_filters.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/libclass_loader.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/libPocoFoundation.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/libroscpp.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/librosconsole.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/libroslib.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/librospack.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/librostime.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/libcpp_common.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_shape3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_photo3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_datasets3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_plot3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_text3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_dnn3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ml3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_video3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_calib3d3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_features2d3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_highgui3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_videoio3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_viz3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_phase_unwrapping3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_flann3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_objdetect3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
+/home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node: ros_kinect_interface/CMakeFiles/subscriber_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cam/Cooperating-Robots/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node"
+	cd /home/cam/Cooperating-Robots/catkin_ws/build/ros_kinect_interface && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/subscriber_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-ros_kinect_interface/CMakeFiles/subscriber_node.dir/build: /home/nao/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node
+ros_kinect_interface/CMakeFiles/subscriber_node.dir/build: /home/cam/Cooperating-Robots/catkin_ws/devel/lib/ros_kinect_interface/subscriber_node
 
 .PHONY : ros_kinect_interface/CMakeFiles/subscriber_node.dir/build
 
@@ -183,10 +183,10 @@ ros_kinect_interface/CMakeFiles/subscriber_node.dir/requires: ros_kinect_interfa
 .PHONY : ros_kinect_interface/CMakeFiles/subscriber_node.dir/requires
 
 ros_kinect_interface/CMakeFiles/subscriber_node.dir/clean:
-	cd /home/nao/catkin_ws/build/ros_kinect_interface && $(CMAKE_COMMAND) -P CMakeFiles/subscriber_node.dir/cmake_clean.cmake
+	cd /home/cam/Cooperating-Robots/catkin_ws/build/ros_kinect_interface && $(CMAKE_COMMAND) -P CMakeFiles/subscriber_node.dir/cmake_clean.cmake
 .PHONY : ros_kinect_interface/CMakeFiles/subscriber_node.dir/clean
 
 ros_kinect_interface/CMakeFiles/subscriber_node.dir/depend:
-	cd /home/nao/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nao/catkin_ws/src /home/nao/catkin_ws/src/ros_kinect_interface /home/nao/catkin_ws/build /home/nao/catkin_ws/build/ros_kinect_interface /home/nao/catkin_ws/build/ros_kinect_interface/CMakeFiles/subscriber_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cam/Cooperating-Robots/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cam/Cooperating-Robots/catkin_ws/src /home/cam/Cooperating-Robots/catkin_ws/src/ros_kinect_interface /home/cam/Cooperating-Robots/catkin_ws/build /home/cam/Cooperating-Robots/catkin_ws/build/ros_kinect_interface /home/cam/Cooperating-Robots/catkin_ws/build/ros_kinect_interface/CMakeFiles/subscriber_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ros_kinect_interface/CMakeFiles/subscriber_node.dir/depend
 

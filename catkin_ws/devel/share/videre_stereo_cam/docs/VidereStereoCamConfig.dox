@@ -1,0 +1,24 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~videre_mode" : \b [str] Amount of processing done on camera if STOC min: , default: none, max: 
+- \b "~convert_to_color" : \b [bool] Calculate color from Bayer pattern min: False, default: False, max: True
+- \b "~brightness_auto" : \b [bool] Auto adjust brightness min: False, default: True, max: True
+- \b "~brightness" : \b [int] Brightness level if not auto min: 0, default: 50, max: 255
+- \b "~exposure_auto" : \b [bool] Auto adjust exposure min: False, default: True, max: True
+- \b "~exposure" : \b [int] Exposure level if not auto min: 0, default: 0, max: 529
+- \b "~gain_auto" : \b [bool] Auto adjust gain min: False, default: True, max: True
+- \b "~gain" : \b [int] Gain level if not auto min: 0, default: 0, max: 48
+- \b "~whitebalance_auto" : \b [bool] Auto adjust whitebalance min: False, default: True, max: True
+- \b "~whitebalance_blue" : \b [int] Blue/U level if not auto min: 0, default: 15, max: 30
+- \b "~whitebalance_red" : \b [int] Red/V level if not auto min: 0, default: 15, max: 30
+- \b "~companding" : \b [bool] Bring up low light levels min: False, default: True, max: True
+- \b "~hdr" : \b [bool] High dynamic range min: False, default: False, max: True
+- \b "~frame_id" : \b [str] The optical camera TF frame set in message headers min: , default: stereo_optical_frame, max: 
+- \b "~uniqueness_threshold" : \b [int] Filter out if best match does not sufficiently exceed the next-best match min: 0, default: 36, max: 189
+- \b "~texture_threshold" : \b [int] Filter out if SAD window response does not exceed texture threshold min: 0, default: 30, max: 189
+- \b "~speckle_size" : \b [int] Reject regions smaller than this size, pixels min: 0, default: 100, max: 1000
+- \b "~speckle_range" : \b [int] Max allowed difference between detected disparities min: 0, default: 10, max: 31
+- \b "~horopter" : \b [int] Change horopter min: 0, default: 0, max: 63
+

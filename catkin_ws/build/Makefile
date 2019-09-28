@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nao/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/cam/Cooperating-Robots/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nao/catkin_ws/build
+CMAKE_BINARY_DIR = /home/cam/Cooperating-Robots/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -70,8 +70,8 @@ install/fast: preinstall/fast
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -135,9 +135,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/catkin_ws/build/CMakeFiles /home/nao/catkin_ws/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cam/Cooperating-Robots/catkin_ws/build/CMakeFiles /home/cam/Cooperating-Robots/catkin_ws/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nao/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cam/Cooperating-Robots/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -620,6 +620,591 @@ sensor_msgs_generate_messages_lisp/fast:
 	$(MAKE) -f ros_kinect_interface/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make ros_kinect_interface/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
+#=============================================================================
+# Target rules for targets named driver_base_generate_messages_nodejs
+
+# Build rule for target.
+driver_base_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 driver_base_generate_messages_nodejs
+.PHONY : driver_base_generate_messages_nodejs
+
+# fast build rule for target.
+driver_base_generate_messages_nodejs/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/driver_base_generate_messages_nodejs.dir/build.make videre_stereo_cam/CMakeFiles/driver_base_generate_messages_nodejs.dir/build
+.PHONY : driver_base_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named image_proc_gencfg
+
+# Build rule for target.
+image_proc_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 image_proc_gencfg
+.PHONY : image_proc_gencfg
+
+# fast build rule for target.
+image_proc_gencfg/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/image_proc_gencfg.dir/build.make videre_stereo_cam/CMakeFiles/image_proc_gencfg.dir/build
+.PHONY : image_proc_gencfg/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_cpp
+
+# Build rule for target.
+tf_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_cpp
+.PHONY : tf_generate_messages_cpp
+
+# fast build rule for target.
+tf_generate_messages_cpp/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/tf_generate_messages_cpp.dir/build.make videre_stereo_cam/CMakeFiles/tf_generate_messages_cpp.dir/build
+.PHONY : tf_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named dynamic_reconfigure_generate_messages_nodejs
+
+# Build rule for target.
+dynamic_reconfigure_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_nodejs
+.PHONY : dynamic_reconfigure_generate_messages_nodejs
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_nodejs/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make videre_stereo_cam/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named dynamic_reconfigure_generate_messages_lisp
+
+# Build rule for target.
+dynamic_reconfigure_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_lisp
+.PHONY : dynamic_reconfigure_generate_messages_lisp
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_lisp/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make videre_stereo_cam/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named dynamic_reconfigure_generate_messages_eus
+
+# Build rule for target.
+dynamic_reconfigure_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_eus
+.PHONY : dynamic_reconfigure_generate_messages_eus
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_eus/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make videre_stereo_cam/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named dynamic_reconfigure_generate_messages_py
+
+# Build rule for target.
+dynamic_reconfigure_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_py
+.PHONY : dynamic_reconfigure_generate_messages_py
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_py/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make videre_stereo_cam/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named driver_base_generate_messages_eus
+
+# Build rule for target.
+driver_base_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 driver_base_generate_messages_eus
+.PHONY : driver_base_generate_messages_eus
+
+# fast build rule for target.
+driver_base_generate_messages_eus/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/driver_base_generate_messages_eus.dir/build.make videre_stereo_cam/CMakeFiles/driver_base_generate_messages_eus.dir/build
+.PHONY : driver_base_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named stereo_image_proc_gencfg
+
+# Build rule for target.
+stereo_image_proc_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 stereo_image_proc_gencfg
+.PHONY : stereo_image_proc_gencfg
+
+# fast build rule for target.
+stereo_image_proc_gencfg/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/stereo_image_proc_gencfg.dir/build.make videre_stereo_cam/CMakeFiles/stereo_image_proc_gencfg.dir/build
+.PHONY : stereo_image_proc_gencfg/fast
+
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_nodejs
+
+# Build rule for target.
+diagnostic_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_nodejs
+.PHONY : diagnostic_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build.make videre_stereo_cam/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
+.PHONY : diagnostic_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named driver_base_generate_messages_cpp
+
+# Build rule for target.
+driver_base_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 driver_base_generate_messages_cpp
+.PHONY : driver_base_generate_messages_cpp
+
+# fast build rule for target.
+driver_base_generate_messages_cpp/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/driver_base_generate_messages_cpp.dir/build.make videre_stereo_cam/CMakeFiles/driver_base_generate_messages_cpp.dir/build
+.PHONY : driver_base_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_cpp
+
+# Build rule for target.
+tf2_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_cpp
+.PHONY : tf2_msgs_generate_messages_cpp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make videre_stereo_cam/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+.PHONY : tf2_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named stereo_msgs_generate_messages_cpp
+
+# Build rule for target.
+stereo_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 stereo_msgs_generate_messages_cpp
+.PHONY : stereo_msgs_generate_messages_cpp
+
+# fast build rule for target.
+stereo_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/stereo_msgs_generate_messages_cpp.dir/build.make videre_stereo_cam/CMakeFiles/stereo_msgs_generate_messages_cpp.dir/build
+.PHONY : stereo_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named driver_base_generate_messages_lisp
+
+# Build rule for target.
+driver_base_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 driver_base_generate_messages_lisp
+.PHONY : driver_base_generate_messages_lisp
+
+# fast build rule for target.
+driver_base_generate_messages_lisp/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/driver_base_generate_messages_lisp.dir/build.make videre_stereo_cam/CMakeFiles/driver_base_generate_messages_lisp.dir/build
+.PHONY : driver_base_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_cpp
+
+# Build rule for target.
+actionlib_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_cpp
+.PHONY : actionlib_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_generate_messages_cpp/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make videre_stereo_cam/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+.PHONY : actionlib_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named driver_base_generate_messages_py
+
+# Build rule for target.
+driver_base_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 driver_base_generate_messages_py
+.PHONY : driver_base_generate_messages_py
+
+# fast build rule for target.
+driver_base_generate_messages_py/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/driver_base_generate_messages_py.dir/build.make videre_stereo_cam/CMakeFiles/driver_base_generate_messages_py.dir/build
+.PHONY : driver_base_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named dynamic_reconfigure_gencfg
+
+# Build rule for target.
+dynamic_reconfigure_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_gencfg
+.PHONY : dynamic_reconfigure_gencfg
+
+# fast build rule for target.
+dynamic_reconfigure_gencfg/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make videre_stereo_cam/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
+.PHONY : dynamic_reconfigure_gencfg/fast
+
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_py
+
+# Build rule for target.
+diagnostic_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_py
+.PHONY : diagnostic_msgs_generate_messages_py
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_py/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make videre_stereo_cam/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
+.PHONY : diagnostic_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_lisp
+
+# Build rule for target.
+tf_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_lisp
+.PHONY : tf_generate_messages_lisp
+
+# fast build rule for target.
+tf_generate_messages_lisp/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/tf_generate_messages_lisp.dir/build.make videre_stereo_cam/CMakeFiles/tf_generate_messages_lisp.dir/build
+.PHONY : tf_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_nodejs
+
+# Build rule for target.
+tf2_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_nodejs
+.PHONY : tf2_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+tf2_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make videre_stereo_cam/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
+.PHONY : tf2_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named dynamic_reconfigure_generate_messages_cpp
+
+# Build rule for target.
+dynamic_reconfigure_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_cpp
+.PHONY : dynamic_reconfigure_generate_messages_cpp
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_cpp/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make videre_stereo_cam/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_eus
+
+# Build rule for target.
+diagnostic_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_eus
+.PHONY : diagnostic_msgs_generate_messages_eus
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_eus/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make videre_stereo_cam/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build
+.PHONY : diagnostic_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_cpp
+
+# Build rule for target.
+diagnostic_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_cpp
+.PHONY : diagnostic_msgs_generate_messages_cpp
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make videre_stereo_cam/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build
+.PHONY : diagnostic_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_nodejs
+
+# Build rule for target.
+tf_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_nodejs
+.PHONY : tf_generate_messages_nodejs
+
+# fast build rule for target.
+tf_generate_messages_nodejs/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/tf_generate_messages_nodejs.dir/build.make videre_stereo_cam/CMakeFiles/tf_generate_messages_nodejs.dir/build
+.PHONY : tf_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_eus
+
+# Build rule for target.
+actionlib_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_eus
+.PHONY : actionlib_generate_messages_eus
+
+# fast build rule for target.
+actionlib_generate_messages_eus/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/actionlib_generate_messages_eus.dir/build.make videre_stereo_cam/CMakeFiles/actionlib_generate_messages_eus.dir/build
+.PHONY : actionlib_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named stereo_msgs_generate_messages_eus
+
+# Build rule for target.
+stereo_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 stereo_msgs_generate_messages_eus
+.PHONY : stereo_msgs_generate_messages_eus
+
+# fast build rule for target.
+stereo_msgs_generate_messages_eus/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/stereo_msgs_generate_messages_eus.dir/build.make videre_stereo_cam/CMakeFiles/stereo_msgs_generate_messages_eus.dir/build
+.PHONY : stereo_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named stereo_msgs_generate_messages_nodejs
+
+# Build rule for target.
+stereo_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 stereo_msgs_generate_messages_nodejs
+.PHONY : stereo_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+stereo_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/stereo_msgs_generate_messages_nodejs.dir/build.make videre_stereo_cam/CMakeFiles/stereo_msgs_generate_messages_nodejs.dir/build
+.PHONY : stereo_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_lisp
+
+# Build rule for target.
+diagnostic_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_lisp
+.PHONY : diagnostic_msgs_generate_messages_lisp
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make videre_stereo_cam/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
+.PHONY : diagnostic_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_eus
+
+# Build rule for target.
+tf_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_eus
+.PHONY : tf_generate_messages_eus
+
+# fast build rule for target.
+tf_generate_messages_eus/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/tf_generate_messages_eus.dir/build.make videre_stereo_cam/CMakeFiles/tf_generate_messages_eus.dir/build
+.PHONY : tf_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named stereo_msgs_generate_messages_py
+
+# Build rule for target.
+stereo_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 stereo_msgs_generate_messages_py
+.PHONY : stereo_msgs_generate_messages_py
+
+# fast build rule for target.
+stereo_msgs_generate_messages_py/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/stereo_msgs_generate_messages_py.dir/build.make videre_stereo_cam/CMakeFiles/stereo_msgs_generate_messages_py.dir/build
+.PHONY : stereo_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_py
+
+# Build rule for target.
+tf_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_py
+.PHONY : tf_generate_messages_py
+
+# fast build rule for target.
+tf_generate_messages_py/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/tf_generate_messages_py.dir/build.make videre_stereo_cam/CMakeFiles/tf_generate_messages_py.dir/build
+.PHONY : tf_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_eus
+
+# Build rule for target.
+actionlib_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_eus
+.PHONY : actionlib_msgs_generate_messages_eus
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_eus/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make videre_stereo_cam/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+.PHONY : actionlib_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_lisp
+
+# Build rule for target.
+actionlib_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_lisp
+.PHONY : actionlib_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_generate_messages_lisp/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make videre_stereo_cam/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+.PHONY : actionlib_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_nodejs
+
+# Build rule for target.
+actionlib_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_nodejs
+.PHONY : actionlib_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_generate_messages_nodejs/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make videre_stereo_cam/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+.PHONY : actionlib_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_cpp
+
+# Build rule for target.
+actionlib_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_cpp
+.PHONY : actionlib_msgs_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make videre_stereo_cam/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+.PHONY : actionlib_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_lisp
+
+# Build rule for target.
+actionlib_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_lisp
+.PHONY : actionlib_msgs_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make videre_stereo_cam/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+.PHONY : actionlib_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_py
+
+# Build rule for target.
+actionlib_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_py
+.PHONY : actionlib_msgs_generate_messages_py
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_py/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make videre_stereo_cam/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+.PHONY : actionlib_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_eus
+
+# Build rule for target.
+tf2_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_eus
+.PHONY : tf2_msgs_generate_messages_eus
+
+# fast build rule for target.
+tf2_msgs_generate_messages_eus/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make videre_stereo_cam/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+.PHONY : tf2_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_msgs_generate_messages_nodejs
+
+# Build rule for target.
+actionlib_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_nodejs
+.PHONY : actionlib_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make videre_stereo_cam/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+.PHONY : actionlib_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_py
+
+# Build rule for target.
+tf2_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_py
+.PHONY : tf2_msgs_generate_messages_py
+
+# fast build rule for target.
+tf2_msgs_generate_messages_py/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make videre_stereo_cam/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+.PHONY : tf2_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_lisp
+
+# Build rule for target.
+tf2_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_lisp
+.PHONY : tf2_msgs_generate_messages_lisp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make videre_stereo_cam/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+.PHONY : tf2_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_py
+
+# Build rule for target.
+actionlib_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_py
+.PHONY : actionlib_generate_messages_py
+
+# fast build rule for target.
+actionlib_generate_messages_py/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/actionlib_generate_messages_py.dir/build.make videre_stereo_cam/CMakeFiles/actionlib_generate_messages_py.dir/build
+.PHONY : actionlib_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named videre_stereo_cam_gencfg
+
+# Build rule for target.
+videre_stereo_cam_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 videre_stereo_cam_gencfg
+.PHONY : videre_stereo_cam_gencfg
+
+# fast build rule for target.
+videre_stereo_cam_gencfg/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/videre_stereo_cam_gencfg.dir/build.make videre_stereo_cam/CMakeFiles/videre_stereo_cam_gencfg.dir/build
+.PHONY : videre_stereo_cam_gencfg/fast
+
+#=============================================================================
+# Target rules for targets named stereo_msgs_generate_messages_lisp
+
+# Build rule for target.
+stereo_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 stereo_msgs_generate_messages_lisp
+.PHONY : stereo_msgs_generate_messages_lisp
+
+# fast build rule for target.
+stereo_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/stereo_msgs_generate_messages_lisp.dir/build.make videre_stereo_cam/CMakeFiles/stereo_msgs_generate_messages_lisp.dir/build
+.PHONY : stereo_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named videre_stereo_node
+
+# Build rule for target.
+videre_stereo_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 videre_stereo_node
+.PHONY : videre_stereo_node
+
+# fast build rule for target.
+videre_stereo_node/fast:
+	$(MAKE) -f videre_stereo_cam/CMakeFiles/videre_stereo_node.dir/build.make videre_stereo_cam/CMakeFiles/videre_stereo_node.dir/build
+.PHONY : videre_stereo_node/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -668,6 +1253,51 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... driver_base_generate_messages_nodejs"
+	@echo "... image_proc_gencfg"
+	@echo "... tf_generate_messages_cpp"
+	@echo "... dynamic_reconfigure_generate_messages_nodejs"
+	@echo "... dynamic_reconfigure_generate_messages_lisp"
+	@echo "... dynamic_reconfigure_generate_messages_eus"
+	@echo "... dynamic_reconfigure_generate_messages_py"
+	@echo "... driver_base_generate_messages_eus"
+	@echo "... stereo_image_proc_gencfg"
+	@echo "... diagnostic_msgs_generate_messages_nodejs"
+	@echo "... driver_base_generate_messages_cpp"
+	@echo "... tf2_msgs_generate_messages_cpp"
+	@echo "... stereo_msgs_generate_messages_cpp"
+	@echo "... driver_base_generate_messages_lisp"
+	@echo "... actionlib_generate_messages_cpp"
+	@echo "... driver_base_generate_messages_py"
+	@echo "... dynamic_reconfigure_gencfg"
+	@echo "... diagnostic_msgs_generate_messages_py"
+	@echo "... tf_generate_messages_lisp"
+	@echo "... tf2_msgs_generate_messages_nodejs"
+	@echo "... dynamic_reconfigure_generate_messages_cpp"
+	@echo "... diagnostic_msgs_generate_messages_eus"
+	@echo "... diagnostic_msgs_generate_messages_cpp"
+	@echo "... tf_generate_messages_nodejs"
+	@echo "... actionlib_generate_messages_eus"
+	@echo "... stereo_msgs_generate_messages_eus"
+	@echo "... stereo_msgs_generate_messages_nodejs"
+	@echo "... diagnostic_msgs_generate_messages_lisp"
+	@echo "... tf_generate_messages_eus"
+	@echo "... stereo_msgs_generate_messages_py"
+	@echo "... tf_generate_messages_py"
+	@echo "... actionlib_msgs_generate_messages_eus"
+	@echo "... actionlib_generate_messages_lisp"
+	@echo "... actionlib_generate_messages_nodejs"
+	@echo "... actionlib_msgs_generate_messages_cpp"
+	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... actionlib_msgs_generate_messages_py"
+	@echo "... tf2_msgs_generate_messages_eus"
+	@echo "... actionlib_msgs_generate_messages_nodejs"
+	@echo "... tf2_msgs_generate_messages_py"
+	@echo "... tf2_msgs_generate_messages_lisp"
+	@echo "... actionlib_generate_messages_py"
+	@echo "... videre_stereo_cam_gencfg"
+	@echo "... stereo_msgs_generate_messages_lisp"
+	@echo "... videre_stereo_node"
 .PHONY : help
 
 

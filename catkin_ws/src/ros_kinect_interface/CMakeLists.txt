@@ -7,10 +7,12 @@ project(ros_kinect_interface)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
+
+find_package(OpenCV REQUIRED)
+
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
-  OpenCV REQUIRED
   cv_bridge
   image_transport
   

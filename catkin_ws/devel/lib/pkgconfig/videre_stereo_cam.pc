@@ -1,0 +1,8 @@
+prefix=/home/cam/Cooperating-Robots/catkin_ws/devel
+
+Name: videre_stereo_cam
+Description: Description of videre_stereo_cam
+Version: 0.5.0
+Cflags: -I/home/cam/Cooperating-Robots/catkin_ws/devel/include -I/home/cam/Cooperating-Robots/catkin_ws/src/videre_stereo_cam/include -I/usr/include
+Libs: -L/home/cam/Cooperating-Robots/catkin_ws/devel/lib /usr/lib/x86_64-linux-gnu/libboost_thread.so /usr/lib/x86_64-linux-gnu/libboost_signals.so /usr/lib/x86_64-linux-gnu/libboost_chrono.so /usr/lib/x86_64-linux-gnu/libboost_system.so /usr/lib/x86_64-linux-gnu/libboost_date_time.so /usr/lib/x86_64-linux-gnu/libboost_atomic.so /usr/lib/x86_64-linux-gnu/libpthread.so
+Requires: roscpp sensor_msgs image_transport stereo_image_proc diagnostic_updater stereo_msgs dynamic_reconfigure driver_base tf cv_bridge

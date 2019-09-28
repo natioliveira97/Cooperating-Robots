@@ -1,8 +1,8 @@
-prefix=/home/nao/catkin_ws/install
+prefix=/home/cam/Cooperating-Robots/catkin_ws/install
 
 Name: ros_kinect_interface
 Description: Description of ros_kinect_interface
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/nao/catkin_ws/install/lib 
+Libs: -L/home/cam/Cooperating-Robots/catkin_ws/install/lib 
 Requires: 

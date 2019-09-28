@@ -1,8 +1,8 @@
-# Install script for directory: /home/nao/catkin_ws/src/ros_kinect_interface
+# Install script for directory: /home/cam/Cooperating-Robots/catkin_ws/src/ros_kinect_interface
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/nao/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/cam/Cooperating-Robots/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/nao/catkin_ws/build/ros_kinect_interface/catkin_generated/installspace/ros_kinect_interface.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/cam/Cooperating-Robots/catkin_ws/build/ros_kinect_interface/catkin_generated/installspace/ros_kinect_interface.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_kinect_interface/cmake" TYPE FILE FILES
-    "/home/nao/catkin_ws/build/ros_kinect_interface/catkin_generated/installspace/ros_kinect_interfaceConfig.cmake"
-    "/home/nao/catkin_ws/build/ros_kinect_interface/catkin_generated/installspace/ros_kinect_interfaceConfig-version.cmake"
+    "/home/cam/Cooperating-Robots/catkin_ws/build/ros_kinect_interface/catkin_generated/installspace/ros_kinect_interfaceConfig.cmake"
+    "/home/cam/Cooperating-Robots/catkin_ws/build/ros_kinect_interface/catkin_generated/installspace/ros_kinect_interfaceConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_kinect_interface" TYPE FILE FILES "/home/nao/catkin_ws/src/ros_kinect_interface/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_kinect_interface" TYPE FILE FILES "/home/cam/Cooperating-Robots/catkin_ws/src/ros_kinect_interface/package.xml")
 endif()
 

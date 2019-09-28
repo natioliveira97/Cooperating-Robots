@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/nao/catkin_ws/devel/setup.sh
+    local-name: /home/cam/Cooperating-Robots/catkin_ws/devel/setup.sh

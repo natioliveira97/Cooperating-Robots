@@ -1,0 +1,25 @@
+\subsubsection usage Usage
+\verbatim
+<node name="videre_stereo_cam" pkg="videre_stereo_cam" type="videre_stereo_cam">
+  <param name="videre_mode" type="str" value="none" />
+  <param name="convert_to_color" type="bool" value="False" />
+  <param name="brightness_auto" type="bool" value="True" />
+  <param name="brightness" type="int" value="50" />
+  <param name="exposure_auto" type="bool" value="True" />
+  <param name="exposure" type="int" value="0" />
+  <param name="gain_auto" type="bool" value="True" />
+  <param name="gain" type="int" value="0" />
+  <param name="whitebalance_auto" type="bool" value="True" />
+  <param name="whitebalance_blue" type="int" value="15" />
+  <param name="whitebalance_red" type="int" value="15" />
+  <param name="companding" type="bool" value="True" />
+  <param name="hdr" type="bool" value="False" />
+  <param name="frame_id" type="str" value="stereo_optical_frame" />
+  <param name="uniqueness_threshold" type="int" value="36" />
+  <param name="texture_threshold" type="int" value="30" />
+  <param name="speckle_size" type="int" value="100" />
+  <param name="speckle_range" type="int" value="10" />
+  <param name="horopter" type="int" value="0" />
+</node>
+\endverbatim
+

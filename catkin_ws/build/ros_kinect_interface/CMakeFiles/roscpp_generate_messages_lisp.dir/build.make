@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nao/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/cam/Cooperating-Robots/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nao/catkin_ws/build
+CMAKE_BINARY_DIR = /home/cam/Cooperating-Robots/catkin_ws/build
 
 # Utility rule file for roscpp_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ ros_kinect_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/build: roscpp_
 .PHONY : ros_kinect_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 
 ros_kinect_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
-	cd /home/nao/catkin_ws/build/ros_kinect_interface && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/cam/Cooperating-Robots/catkin_ws/build/ros_kinect_interface && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : ros_kinect_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 
 ros_kinect_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/depend:
-	cd /home/nao/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nao/catkin_ws/src /home/nao/catkin_ws/src/ros_kinect_interface /home/nao/catkin_ws/build /home/nao/catkin_ws/build/ros_kinect_interface /home/nao/catkin_ws/build/ros_kinect_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cam/Cooperating-Robots/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cam/Cooperating-Robots/catkin_ws/src /home/cam/Cooperating-Robots/catkin_ws/src/ros_kinect_interface /home/cam/Cooperating-Robots/catkin_ws/build /home/cam/Cooperating-Robots/catkin_ws/build/ros_kinect_interface /home/cam/Cooperating-Robots/catkin_ws/build/ros_kinect_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ros_kinect_interface/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
 
