@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/cam/Cooperating-Robots/catkin_ws/install/setup.sh
+    local-name: /home/scara/Cooperating-Robots/catkin_ws/install/setup.sh

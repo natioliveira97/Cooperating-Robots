@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "ros_kinect_interface"
-PROJECT_SPACE_DIR = "/home/cam/Cooperating-Robots/catkin_ws/devel"
+PROJECT_SPACE_DIR = "/home/scara/Cooperating-Robots/catkin_ws/devel"
 PROJECT_VERSION = "0.0.0"

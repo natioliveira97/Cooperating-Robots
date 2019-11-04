@@ -1,8 +1,8 @@
-# Install script for directory: /home/cam/Cooperating-Robots/catkin_ws/src/ros_kinect_interface
+# Install script for directory: /home/scara/Cooperating-Robots/catkin_ws/src/ros_kinect_interface
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/cam/Cooperating-Robots/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/scara/Cooperating-Robots/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,18 +32,23 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/cam/Cooperating-Robots/catkin_ws/build/ros_kinect_interface/catkin_generated/installspace/ros_kinect_interface.pc")
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/scara/Cooperating-Robots/catkin_ws/build/ros_kinect_interface/catkin_generated/installspace/ros_kinect_interface.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_kinect_interface/cmake" TYPE FILE FILES
-    "/home/cam/Cooperating-Robots/catkin_ws/build/ros_kinect_interface/catkin_generated/installspace/ros_kinect_interfaceConfig.cmake"
-    "/home/cam/Cooperating-Robots/catkin_ws/build/ros_kinect_interface/catkin_generated/installspace/ros_kinect_interfaceConfig-version.cmake"
+    "/home/scara/Cooperating-Robots/catkin_ws/build/ros_kinect_interface/catkin_generated/installspace/ros_kinect_interfaceConfig.cmake"
+    "/home/scara/Cooperating-Robots/catkin_ws/build/ros_kinect_interface/catkin_generated/installspace/ros_kinect_interfaceConfig-version.cmake"
     )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_kinect_interface" TYPE FILE FILES "/home/cam/Cooperating-Robots/catkin_ws/src/ros_kinect_interface/package.xml")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_kinect_interface" TYPE FILE FILES "/home/scara/Cooperating-Robots/catkin_ws/src/ros_kinect_interface/package.xml")
 endif()
 

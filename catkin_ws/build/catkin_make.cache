@@ -1,2 +1,2 @@
-ros_kinect_interface:videre_stereo_cam
--DCATKIN_DEVEL_PREFIX=/home/cam/Cooperating-Robots/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/cam/Cooperating-Robots/catkin_ws/install -G Unix Makefiles
+camera1394:ros_kinect_interface:videre_cam_interface
+-DCATKIN_DEVEL_PREFIX=/home/scara/Cooperating-Robots/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/scara/Cooperating-Robots/catkin_ws/install -G Unix Makefiles

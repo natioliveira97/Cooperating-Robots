@@ -4,10 +4,36 @@
 #include <cv_bridge/cv_bridge.h>
  
 void imageCallback(const sensor_msgs::ImageConstPtr& msg){
-   try
-   {
-     cv::imshow("view", cv_bridge::toCvShare(msg, "bgr8")->image);
-     cv::waitKey(30);
+	
+   cv::Mat cvimage = cv_bridge::toCvShare(msg, "mono8")->image;
+   cv::Mat destination(cv::Size(cvimage.cols, cvimage.rows), CV_8U, cv::Scalar(0));
+   cv::Mat zeroArray(cv::Size(1, cvimage.cols), CV_8U, cv::Scalar(0));
+   cv::Mat rowArray;
+   cv::Mat check;
+   int k = 0;
+
+
+   for(int i = 0; i<cvimage.rows; ++i){
+		cv::transpose(cvimage.row(i), rowArray);		
+    	cv::bitwise_xor(rowArray, zeroArray, check); 
+      if(cv::countNonZero(check)!=0){
+         destination.row(k) = (cvimage.row(i)+0);
+         std::cout <<destination.row(k) << std::endl;
+         ++k;
+      }
+   }
+
+
+
+
+	
+
+
+   try{
+		cv::imshow("view", cvimage);
+		cv::imshow("view2", destination);
+		// std::cout << cvimage.size() << " " << cvimage.channels()<< std::endl;
+		cv::waitKey(30);
    }
    catch (cv_bridge::Exception& e)
    {
@@ -15,34 +41,17 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg){
    }
 }
 
-void imageCallback2(const sensor_msgs::ImageConstPtr& msg){
-   try
-   {
-     cv::imshow("view2", cv_bridge::toCvShare(msg, "bgr8")->image);
-     cv::waitKey(30);
-   }
-   catch (cv_bridge::Exception& e)
-   {
-     ROS_ERROR("Could not convert from '%s' to 'bgr8'.", msg->encoding.c_str());
-   }
-}
  
 int main(int argc, char **argv){
    ros::init(argc, argv, "image_listener");
    ros::NodeHandle nh;
-   cv::namedWindow("view");
-   cv::startWindowThread();
+   cv::namedWindow("view", cv::WINDOW_NORMAL);
 
-   cv::namedWindow("view2");
-   cv::startWindowThread();
 
    image_transport::ImageTransport it(nh);
-   image_transport::Subscriber sub = it.subscribe("kinect1/depth/image_rect", 1, imageCallback);
+   image_transport::Subscriber sub = it.subscribe("/camera/image_raw", 1, imageCallback);
 
-   image_transport::ImageTransport it2(nh);
-   image_transport::Subscriber sub2 = it2.subscribe("kinect2/depth/image_rect", 1, imageCallback2);
-   
+  
    ros::spin();
    cv::destroyWindow("view");
-   cv::destroyWindow("view2");
 }

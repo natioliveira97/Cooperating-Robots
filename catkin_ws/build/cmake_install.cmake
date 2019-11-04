@@ -1,8 +1,8 @@
-# Install script for directory: /home/cam/Cooperating-Robots/catkin_ws/src
+# Install script for directory: /home/scara/Cooperating-Robots/catkin_ws/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/cam/Cooperating-Robots/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/scara/Cooperating-Robots/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,7 +32,12 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   
       if (NOT EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
         file(MAKE_DIRECTORY "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
@@ -42,92 +47,93 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
       endif()
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cam/Cooperating-Robots/catkin_ws/install/_setup_util.py")
+   "/home/scara/Cooperating-Robots/catkin_ws/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cam/Cooperating-Robots/catkin_ws/install" TYPE PROGRAM FILES "/home/cam/Cooperating-Robots/catkin_ws/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/scara/Cooperating-Robots/catkin_ws/install" TYPE PROGRAM FILES "/home/scara/Cooperating-Robots/catkin_ws/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cam/Cooperating-Robots/catkin_ws/install/env.sh")
+   "/home/scara/Cooperating-Robots/catkin_ws/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cam/Cooperating-Robots/catkin_ws/install" TYPE PROGRAM FILES "/home/cam/Cooperating-Robots/catkin_ws/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/scara/Cooperating-Robots/catkin_ws/install" TYPE PROGRAM FILES "/home/scara/Cooperating-Robots/catkin_ws/build/catkin_generated/installspace/env.sh")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cam/Cooperating-Robots/catkin_ws/install/setup.bash;/home/cam/Cooperating-Robots/catkin_ws/install/local_setup.bash")
+   "/home/scara/Cooperating-Robots/catkin_ws/install/setup.bash;/home/scara/Cooperating-Robots/catkin_ws/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cam/Cooperating-Robots/catkin_ws/install" TYPE FILE FILES
-    "/home/cam/Cooperating-Robots/catkin_ws/build/catkin_generated/installspace/setup.bash"
-    "/home/cam/Cooperating-Robots/catkin_ws/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/scara/Cooperating-Robots/catkin_ws/install" TYPE FILE FILES
+    "/home/scara/Cooperating-Robots/catkin_ws/build/catkin_generated/installspace/setup.bash"
+    "/home/scara/Cooperating-Robots/catkin_ws/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cam/Cooperating-Robots/catkin_ws/install/setup.sh;/home/cam/Cooperating-Robots/catkin_ws/install/local_setup.sh")
+   "/home/scara/Cooperating-Robots/catkin_ws/install/setup.sh;/home/scara/Cooperating-Robots/catkin_ws/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cam/Cooperating-Robots/catkin_ws/install" TYPE FILE FILES
-    "/home/cam/Cooperating-Robots/catkin_ws/build/catkin_generated/installspace/setup.sh"
-    "/home/cam/Cooperating-Robots/catkin_ws/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/scara/Cooperating-Robots/catkin_ws/install" TYPE FILE FILES
+    "/home/scara/Cooperating-Robots/catkin_ws/build/catkin_generated/installspace/setup.sh"
+    "/home/scara/Cooperating-Robots/catkin_ws/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cam/Cooperating-Robots/catkin_ws/install/setup.zsh;/home/cam/Cooperating-Robots/catkin_ws/install/local_setup.zsh")
+   "/home/scara/Cooperating-Robots/catkin_ws/install/setup.zsh;/home/scara/Cooperating-Robots/catkin_ws/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cam/Cooperating-Robots/catkin_ws/install" TYPE FILE FILES
-    "/home/cam/Cooperating-Robots/catkin_ws/build/catkin_generated/installspace/setup.zsh"
-    "/home/cam/Cooperating-Robots/catkin_ws/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/scara/Cooperating-Robots/catkin_ws/install" TYPE FILE FILES
+    "/home/scara/Cooperating-Robots/catkin_ws/build/catkin_generated/installspace/setup.zsh"
+    "/home/scara/Cooperating-Robots/catkin_ws/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/cam/Cooperating-Robots/catkin_ws/install/.rosinstall")
+   "/home/scara/Cooperating-Robots/catkin_ws/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/cam/Cooperating-Robots/catkin_ws/install" TYPE FILE FILES "/home/cam/Cooperating-Robots/catkin_ws/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/scara/Cooperating-Robots/catkin_ws/install" TYPE FILE FILES "/home/scara/Cooperating-Robots/catkin_ws/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/cam/Cooperating-Robots/catkin_ws/build/gtest/cmake_install.cmake")
-  include("/home/cam/Cooperating-Robots/catkin_ws/build/ros_kinect_interface/cmake_install.cmake")
-  include("/home/cam/Cooperating-Robots/catkin_ws/build/videre_stereo_cam/cmake_install.cmake")
+  include("/home/scara/Cooperating-Robots/catkin_ws/build/gtest/cmake_install.cmake")
+  include("/home/scara/Cooperating-Robots/catkin_ws/build/ros_kinect_interface/cmake_install.cmake")
+  include("/home/scara/Cooperating-Robots/catkin_ws/build/camera1394/cmake_install.cmake")
+  include("/home/scara/Cooperating-Robots/catkin_ws/build/videre_cam_interface/cmake_install.cmake")
 
 endif()
 
@@ -139,5 +145,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/cam/Cooperating-Robots/catkin_ws/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/scara/Cooperating-Robots/catkin_ws/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
