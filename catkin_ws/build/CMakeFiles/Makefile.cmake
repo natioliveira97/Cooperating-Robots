@@ -399,5 +399,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "camera1394/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "camera1394/src/nodes/CMakeFiles/camera1394_nodelet.dir/DependInfo.cmake"
   "camera1394/src/nodes/CMakeFiles/camera1394_node.dir/DependInfo.cmake"
+  "videre_cam_interface/CMakeFiles/extract_lines.dir/DependInfo.cmake"
   "videre_cam_interface/CMakeFiles/subscriber_cam_node.dir/DependInfo.cmake"
   )

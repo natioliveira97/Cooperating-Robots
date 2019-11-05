@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(videre_cam_interface_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT " " STREQUAL " ")
+if(NOT "/home/scara/Cooperating-Robots/catkin_ws/src/videre_cam_interface/include " STREQUAL " ")
   set(videre_cam_interface_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "/home/scara/Cooperating-Robots/catkin_ws/src/videre_cam_interface/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")

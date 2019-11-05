@@ -1481,6 +1481,19 @@ camera1394_node/fast:
 .PHONY : camera1394_node/fast
 
 #=============================================================================
+# Target rules for targets named extract_lines
+
+# Build rule for target.
+extract_lines: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 extract_lines
+.PHONY : extract_lines
+
+# fast build rule for target.
+extract_lines/fast:
+	$(MAKE) -f videre_cam_interface/CMakeFiles/extract_lines.dir/build.make videre_cam_interface/CMakeFiles/extract_lines.dir/build
+.PHONY : extract_lines/fast
+
+#=============================================================================
 # Target rules for targets named subscriber_cam_node
 
 # Build rule for target.
@@ -1607,6 +1620,7 @@ help:
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... camera1394_nodelet"
 	@echo "... camera1394_node"
+	@echo "... extract_lines"
 	@echo "... subscriber_cam_node"
 .PHONY : help
 

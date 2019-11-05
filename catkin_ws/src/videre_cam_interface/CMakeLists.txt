@@ -106,7 +106,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
+  INCLUDE_DIRS include
 #  LIBRARIES videre_cam_interface
 #  CATKIN_DEPENDS roscpp
 #  DEPENDS system_lib
@@ -122,6 +122,8 @@ include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
 )
+
+include_directories(include)
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
@@ -156,6 +158,10 @@ include_directories(
 add_executable(subscriber_cam_node src/subscriber.cpp)
 target_link_libraries(subscriber_cam_node ${OpenCV_LIBS} )
 target_link_libraries(subscriber_cam_node ${catkin_LIBRARIES})
+
+add_executable(extract_lines src/extract_lines.cpp)
+target_link_libraries(extract_lines ${OpenCV_LIBS} )
+target_link_libraries(extract_lines ${catkin_LIBRARIES})
 
 #############
 ## Install ##

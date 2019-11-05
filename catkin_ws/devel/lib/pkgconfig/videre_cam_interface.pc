@@ -3,6 +3,6 @@ prefix=/home/scara/Cooperating-Robots/catkin_ws/devel
 Name: videre_cam_interface
 Description: Description of videre_cam_interface
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/scara/Cooperating-Robots/catkin_ws/src/videre_cam_interface/include
 Libs: -L/home/scara/Cooperating-Robots/catkin_ws/devel/lib 
 Requires: 

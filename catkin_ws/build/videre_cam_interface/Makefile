@@ -68,6 +68,18 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -123,18 +135,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # The main all target
 all: cmake_check_build_system
 	cd /home/scara/Cooperating-Robots/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/scara/Cooperating-Robots/catkin_ws/build/CMakeFiles /home/scara/Cooperating-Robots/catkin_ws/build/videre_cam_interface/CMakeFiles/progress.marks
@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+videre_cam_interface/CMakeFiles/extract_lines.dir/rule:
+	cd /home/scara/Cooperating-Robots/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 videre_cam_interface/CMakeFiles/extract_lines.dir/rule
+.PHONY : videre_cam_interface/CMakeFiles/extract_lines.dir/rule
+
+# Convenience name for target.
+extract_lines: videre_cam_interface/CMakeFiles/extract_lines.dir/rule
+
+.PHONY : extract_lines
+
+# fast build rule for target.
+extract_lines/fast:
+	cd /home/scara/Cooperating-Robots/catkin_ws/build && $(MAKE) -f videre_cam_interface/CMakeFiles/extract_lines.dir/build.make videre_cam_interface/CMakeFiles/extract_lines.dir/build
+.PHONY : extract_lines/fast
+
+# Convenience name for target.
 videre_cam_interface/CMakeFiles/subscriber_cam_node.dir/rule:
 	cd /home/scara/Cooperating-Robots/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 videre_cam_interface/CMakeFiles/subscriber_cam_node.dir/rule
 .PHONY : videre_cam_interface/CMakeFiles/subscriber_cam_node.dir/rule
@@ -181,6 +196,33 @@ subscriber_cam_node: videre_cam_interface/CMakeFiles/subscriber_cam_node.dir/rul
 subscriber_cam_node/fast:
 	cd /home/scara/Cooperating-Robots/catkin_ws/build && $(MAKE) -f videre_cam_interface/CMakeFiles/subscriber_cam_node.dir/build.make videre_cam_interface/CMakeFiles/subscriber_cam_node.dir/build
 .PHONY : subscriber_cam_node/fast
+
+src/extract_lines.o: src/extract_lines.cpp.o
+
+.PHONY : src/extract_lines.o
+
+# target to build an object file
+src/extract_lines.cpp.o:
+	cd /home/scara/Cooperating-Robots/catkin_ws/build && $(MAKE) -f videre_cam_interface/CMakeFiles/extract_lines.dir/build.make videre_cam_interface/CMakeFiles/extract_lines.dir/src/extract_lines.cpp.o
+.PHONY : src/extract_lines.cpp.o
+
+src/extract_lines.i: src/extract_lines.cpp.i
+
+.PHONY : src/extract_lines.i
+
+# target to preprocess a source file
+src/extract_lines.cpp.i:
+	cd /home/scara/Cooperating-Robots/catkin_ws/build && $(MAKE) -f videre_cam_interface/CMakeFiles/extract_lines.dir/build.make videre_cam_interface/CMakeFiles/extract_lines.dir/src/extract_lines.cpp.i
+.PHONY : src/extract_lines.cpp.i
+
+src/extract_lines.s: src/extract_lines.cpp.s
+
+.PHONY : src/extract_lines.s
+
+# target to generate assembly for a file
+src/extract_lines.cpp.s:
+	cd /home/scara/Cooperating-Robots/catkin_ws/build && $(MAKE) -f videre_cam_interface/CMakeFiles/extract_lines.dir/build.make videre_cam_interface/CMakeFiles/extract_lines.dir/src/extract_lines.cpp.s
+.PHONY : src/extract_lines.cpp.s
 
 src/subscriber.o: src/subscriber.cpp.o
 
@@ -216,13 +258,17 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
+	@echo "... install"
+	@echo "... extract_lines"
 	@echo "... install/local"
 	@echo "... test"
 	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... subscriber_cam_node"
 	@echo "... rebuild_cache"
-	@echo "... install"
+	@echo "... src/extract_lines.o"
+	@echo "... src/extract_lines.i"
+	@echo "... src/extract_lines.s"
 	@echo "... src/subscriber.o"
 	@echo "... src/subscriber.i"
 	@echo "... src/subscriber.s"

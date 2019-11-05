@@ -15,3 +15,20 @@
 > [PROBLEMA] [RESOLVIDO] Novamente o computador não quis ligar. Abri o gabinete e limpei as peças, com isso o PC voltou a funcionar.
 
 > Rodei um módulo de ROS para captura de imagens com as câmeras videre, porém não funcionou.
+
+## 12-10-2019
+
+> [RESOLVIDO] Encontrei o driver camera1394 que roda as câmeras. Para instalá-lo é necessário clonar o repositório https://github.com/ros-drivers/camera1394.git e rodar o comando:
+
+```
+rosdep install camera1394
+rosmake camera1394
+```
+> Baixei o software coriander para pegar informações de fábrica da câmeras
+
+> [PROBLEMA] As câmeras com indicação color não são totalmente interpretadas pelo driver. Ficam com linhas pretas na imagem recolhida.
+
+## 04-11-2019
+
+> [RESOLVIDO] Criado módulo de ros que limpa as imagens com linhas pretas e publica a nova imagem. Nova imagem é menor que a imagem original.
+

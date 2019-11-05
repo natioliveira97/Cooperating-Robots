@@ -6,38 +6,14 @@
 void imageCallback(const sensor_msgs::ImageConstPtr& msg){
 	
    cv::Mat cvimage = cv_bridge::toCvShare(msg, "mono8")->image;
-   cv::Mat destination(cv::Size(cvimage.cols, cvimage.rows), CV_8U, cv::Scalar(0));
-   cv::Mat zeroArray(cv::Size(1, cvimage.cols), CV_8U, cv::Scalar(0));
-   cv::Mat rowArray;
-   cv::Mat check;
-   int k = 0;
-
-
-   for(int i = 0; i<cvimage.rows; ++i){
-		cv::transpose(cvimage.row(i), rowArray);		
-    	cv::bitwise_xor(rowArray, zeroArray, check); 
-      if(cv::countNonZero(check)!=0){
-         destination.row(k) = (cvimage.row(i)+0);
-         std::cout <<destination.row(k) << std::endl;
-         ++k;
-      }
-   }
-
-
-
-
-	
-
-
+   
    try{
 		cv::imshow("view", cvimage);
-		cv::imshow("view2", destination);
-		// std::cout << cvimage.size() << " " << cvimage.channels()<< std::endl;
 		cv::waitKey(30);
    }
    catch (cv_bridge::Exception& e)
    {
-     ROS_ERROR("Could not convert from '%s' to 'bgr8'.", msg->encoding.c_str());
+     ROS_ERROR("Could not convert from '%s' to 'mono8'.", msg->encoding.c_str());
    }
 }
 

@@ -149,10 +149,11 @@
 /home/scara/Cooperating-Robots/catkin_ws/build/camera1394/src/nodes/CMakeFiles/list_install_components.dir
 /home/scara/Cooperating-Robots/catkin_ws/build/camera1394/src/nodes/CMakeFiles/rebuild_cache.dir
 /home/scara/Cooperating-Robots/catkin_ws/build/videre_cam_interface/CMakeFiles/install/strip.dir
+/home/scara/Cooperating-Robots/catkin_ws/build/videre_cam_interface/CMakeFiles/install.dir
+/home/scara/Cooperating-Robots/catkin_ws/build/videre_cam_interface/CMakeFiles/extract_lines.dir
 /home/scara/Cooperating-Robots/catkin_ws/build/videre_cam_interface/CMakeFiles/install/local.dir
 /home/scara/Cooperating-Robots/catkin_ws/build/videre_cam_interface/CMakeFiles/test.dir
 /home/scara/Cooperating-Robots/catkin_ws/build/videre_cam_interface/CMakeFiles/list_install_components.dir
 /home/scara/Cooperating-Robots/catkin_ws/build/videre_cam_interface/CMakeFiles/edit_cache.dir
 /home/scara/Cooperating-Robots/catkin_ws/build/videre_cam_interface/CMakeFiles/subscriber_cam_node.dir
 /home/scara/Cooperating-Robots/catkin_ws/build/videre_cam_interface/CMakeFiles/rebuild_cache.dir
-/home/scara/Cooperating-Robots/catkin_ws/build/videre_cam_interface/CMakeFiles/install.dir

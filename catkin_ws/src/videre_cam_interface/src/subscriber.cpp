@@ -12,29 +12,27 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg){
    cv::Mat check;
    int k = 0;
 
-    for(int i = 0; i<cvimage.rows; ++i){
-		cv::transpose(cvimage.row(i), rowArray);		
-    	cv::bitwise_xor(rowArray, zeroArray, check); 
 
-		if(cv::countNonZero(check)!=0){
-			destination.row(k) = (cvimage.row(i)+0);
-			std::cout <<destination.row(k) << std::endl;
-			++k;
-		}
-   	}
-
-	
-
+   // for(int i = 0; i<cvimage.rows; ++i){
+	// 	cv::transpose(cvimage.row(i), rowArray);		
+   //  	cv::bitwise_xor(rowArray, zeroArray, check); 
+   //    if(cv::countNonZero(check)!=0){
+   //       destination.row(k) = (cvimage.row(i)+0);
+   //       ++k;
+   //    }
+   //    else{
+   //       std::cout << cvimage.cols << " " << cvimage.rows << std::endl;
+   //    }
+   // }
 
    try{
 		cv::imshow("view", cvimage);
-		cv::imshow("view2", destination);
-		// std::cout << cvimage.size() << " " << cvimage.channels()<< std::endl;
+		// cv::imshow("view2", destination);
 		cv::waitKey(30);
    }
    catch (cv_bridge::Exception& e)
    {
-     ROS_ERROR("Could not convert from '%s' to 'bgr8'.", msg->encoding.c_str());
+     ROS_ERROR("Could not convert from '%s' to 'mono8'.", msg->encoding.c_str());
    }
 }
 
@@ -44,10 +42,8 @@ int main(int argc, char **argv){
    ros::NodeHandle nh;
    cv::namedWindow("view", cv::WINDOW_NORMAL);
 
-
    image_transport::ImageTransport it(nh);
-   image_transport::Subscriber sub = it.subscribe("/camera/image_raw", 1, imageCallback);
-
+   image_transport::Subscriber sub = it.subscribe("/camera/image_clean", 1, imageCallback);
   
    ros::spin();
    cv::destroyWindow("view");
