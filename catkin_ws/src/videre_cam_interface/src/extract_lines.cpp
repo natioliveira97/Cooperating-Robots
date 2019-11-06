@@ -7,10 +7,9 @@
 #include <cv_bridge/cv_bridge.h>
 
 
-sensor_msgs::ImagePtr cleanImage;
+image_transport::Publisher image_pub;
 
 void imageCallback(const sensor_msgs::ImageConstPtr& msg){
-	
    cv::Mat cvimage = cv_bridge::toCvShare(msg, "mono8")->image;
    cv::Mat destination(cv::Size(cvimage.cols, cvimage.rows*2/3), CV_8U);
    int k = 0;
@@ -21,23 +20,28 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg){
             ++k;
         }
     }
-    cleanImage = cv_bridge::CvImage(std_msgs::Header(), "mono8", destination).toImageMsg();
+
+    sensor_msgs::ImagePtr cleanImage = cv_bridge::CvImage(std_msgs::Header(), "mono8", destination).toImageMsg();
+    cv::imshow("view",destination);
+    cv::waitKey(30);
+    image_pub.publish(cleanImage);
 }
 
 int main(int argc, char **argv){
     ros::init(argc, argv, "extract_lines");
-    ros::NodeHandle nh;
+    ros::NodeHandle nh("~");
+
+    std::string image_raw_name, image_clean_name;
+    std::cout<< nh.getParam("image_raw", image_raw_name); 
+    std::cout<< nh.getParam("image_clean", image_clean_name); 
+
 
     image_transport::ImageTransport it(nh);
+    image_transport::Subscriber image_sub = it.subscribe(image_raw_name, 1, imageCallback);
 
-    image_transport::Subscriber image_sub = it.subscribe("/camera/image_raw", 1, imageCallback);
-    image_transport::Publisher image_pub = it.advertise("/camera/image_clean", 1);
+    image_pub = it.advertise(image_clean_name, 1);
 
-    ros::Rate loop_rate(5);
-
-    while (nh.ok()){
-       image_pub.publish(cleanImage);
-       ros::spinOnce();
-       loop_rate.sleep();
-    }  
+    ros::spin();
 }
+
+	

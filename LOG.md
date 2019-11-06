@@ -32,3 +32,6 @@ rosmake camera1394
 
 > [RESOLVIDO] Criado módulo de ros que limpa as imagens com linhas pretas e publica a nova imagem. Nova imagem é menor que a imagem original.
 
+## 05-11-2019
+
+> [PESQUISA] Aprendi a usar o módulo de calibração de câmeras. As imagens menores das câmeras color ainda podem ser um problema. 
