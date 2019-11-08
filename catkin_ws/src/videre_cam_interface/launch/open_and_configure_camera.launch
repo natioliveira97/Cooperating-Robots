@@ -13,10 +13,11 @@
     <!-- Debugging Tools
     <node pkg="qrt_reconfigure" type="qrt_reconfigure" name="configuration" /> -->
 
-    <node pkg="videre_cam_interface" type="extract_lines" name="estract_lines">
+    <!-- <node pkg="videre_cam_interface" type="extract_lines" name="estract_lines">
         <param name="image_raw" value="/camera/image_raw"/>
         <param name="image_clean" value="/camera/image_clean"/>
-    </node>
+    </node> -->
+
 
 
 </launch>

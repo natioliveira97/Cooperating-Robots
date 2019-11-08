@@ -35,3 +35,22 @@ rosmake camera1394
 ## 05-11-2019
 
 > [PESQUISA] Aprendi a usar o módulo de calibração de câmeras. As imagens menores das câmeras color ainda podem ser um problema. 
+
+## 08-11-2019
+
+> [PROBLEMA] Ununbu não coloca acento nos textos
+
+> [RESOLVIDO] Para arrumar os acentos rodar:
+
+    setxkbmap -model abnt2 -layout br -variant abnt2
+    
+> Calibração das cameras videre. Coloquei label em cada uma para facilitar.
+
+    cam 1 - 0055050400053117
+    cam 2 - 0055050400133117
+    cam 3 - 0055050400133118
+    cam 4 - 0055050400053118
+    cam 5 - 0055050400053107
+    cam 6 - 0055050400133107
+    cam 7 - 0055050300032658
+    cam 8 - 0055050300052658

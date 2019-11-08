@@ -6,7 +6,7 @@
         <param name="frame_rate" value="60" />
         <!-- <param name="bayer_pattern" value="gbgr" /> -->
         <!-- <param name="bayer_method" value="" /> -->
-        <!-- <param name="camera_info_url" value="" /> -->
+        <!-- <param name="camera_info_url" value="package://videre_cam_interface/cam1.yaml" /> -->
 
         <remap from="camera/image_raw" to="cam1/image_raw" />
     </node>
