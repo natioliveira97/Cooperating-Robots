@@ -3,21 +3,23 @@
       <param name="video_mode" value="640x480_mono8" />
       <param name="iso_speed" value="400" />
       <param name="frame_rate" value="60" />
+      <param name="auto_exposure" value="2" />
+      <param name="auto_brightness" value="2" />
+      <param name="brightness" value="2000" />
+
       <!-- <param name="bayer_pattern" value="gbgr" /> -->
     </node>
 
-    <!-- <node pkg="image_view" type="image_view" name="image_view" >
+    <node pkg="image_view" type="image_view" name="image_view" >
       <remap from="image" to="camera/image_raw"/>
-    </node> -->
+    </node>
 
-    <!-- Debugging Tools
-    <node pkg="qrt_reconfigure" type="qrt_reconfigure" name="configuration" /> -->
+    <!-- Debugging Tools -->
+    <!-- <node pkg="qrt_reconfigure" type="qrt_reconfigure" name="configuration" /> -->
 
     <!-- <node pkg="videre_cam_interface" type="extract_lines" name="estract_lines">
         <param name="image_raw" value="/camera/image_raw"/>
         <param name="image_clean" value="/camera/image_clean"/>
     </node> -->
-
-
 
 </launch>
