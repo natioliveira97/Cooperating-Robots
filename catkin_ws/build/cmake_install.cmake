@@ -131,8 +131,10 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/scara/Cooperating-Robots/catkin_ws/build/gtest/cmake_install.cmake")
+  include("/home/scara/Cooperating-Robots/catkin_ws/build/skeleton_tracking/cmake_install.cmake")
   include("/home/scara/Cooperating-Robots/catkin_ws/build/ros_kinect_interface/cmake_install.cmake")
   include("/home/scara/Cooperating-Robots/catkin_ws/build/camera1394/cmake_install.cmake")
+  include("/home/scara/Cooperating-Robots/catkin_ws/build/openni_tracker/cmake_install.cmake")
   include("/home/scara/Cooperating-Robots/catkin_ws/build/videre_cam_interface/cmake_install.cmake")
 
 endif()

@@ -1,2 +1,2 @@
-camera1394:ros_kinect_interface:videre_cam_interface
+camera1394:openni_tracker:ros_kinect_interface:skeleton_tracking:videre_cam_interface
 -DCATKIN_DEVEL_PREFIX=/home/scara/Cooperating-Robots/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/scara/Cooperating-Robots/catkin_ws/install -G Unix Makefiles

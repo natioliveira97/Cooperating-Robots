@@ -1,0 +1,8 @@
+prefix=/home/scara/Cooperating-Robots/catkin_ws/devel
+
+Name: skeleton_tracking
+Description: Description of skeleton_tracking
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/scara/Cooperating-Robots/catkin_ws/devel/lib 
+Requires: 

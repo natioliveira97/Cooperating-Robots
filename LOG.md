@@ -53,4 +53,10 @@ rosmake camera1394
     cam 5 - 0055050400053107
     cam 6 - 0055050400133107
     cam 7 - 0055050300032658
-    cam 8 - 0055050300052658
+    cam 8 - 005505030005265
+
+
+
+## 02-01-2020
+
+Instalei NITE para rodas skeleton tracking.
